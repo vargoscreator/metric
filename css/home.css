@@ -1,0 +1,231 @@
+﻿.main{
+	background-image: url('../images/home/main.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+    position: relative;
+}
+.main::after{
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(180.84deg, rgba(255, 255, 255, 0) 0.73%, rgba(189, 189, 189, 0) 0.74%, #3B3D3D 103.05%);
+}
+.main__inner{
+    min-height: 700px;
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+    max-width: 652px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main__title{
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    color: #FFFFFF;
+    margin-bottom: 54px;
+}
+.main__descr{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;  
+    color: #FFFFFF;
+}
+
+.learn{
+    padding-top: 105px;
+}
+
+.learn__descr, .metric__descr, .points__descr{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 37px;
+}
+
+.learn__descr span{
+    font-weight: 700;
+}
+
+.learn__title{
+    text-align: center;
+    margin-top: 97px;
+    margin-bottom: 34px;
+    font-weight: 700;
+    font-size: 30px;
+    color: #3C3C3C;
+    position: relative;
+}
+
+.learn__title::before{
+    content: '';
+    position: absolute;
+    width: 270px;
+    height: 9px;
+    margin-left: 180px;
+    top: 30px;
+    background-image: url('../images/home/group.svg');
+    background-repeat: no-repeat;
+}
+.learn__btn-content{
+    margin-top: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.learn__btn {
+	border-radius: 25px;
+	padding: 10px 55px;
+	transition: all .2s;
+	letter-spacing: 2px;
+	border: 2px solid #3B3D3D;
+	cursor: pointer;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 26px;
+    text-align: center;
+    color: #3B3D3D;
+}
+.learn__btn:hover {
+	background: #3B3D3D;
+	transition: all 0.4s ease;
+	color: #fff;
+}
+.metric{
+    padding: 112px 0 120px 0;
+}
+.metric__inner, .points__inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.metric__title, .points__title{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 55px;
+    color: #3C3C3C;
+    margin-bottom: 30px;
+}
+.metric__img-mob, .points__img-mob{
+    display: none;
+}
+.points__img, .metric__img{
+    width: 80%;
+}
+
+.metric__image, .points__image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.metric__btn-content, .points__btn-content{
+    margin-top: 55px;
+}
+
+.points{
+    padding-bottom: 120px;
+}
+.points__block, .metric__block{
+    max-width: 738px;
+}
+@media (max-width: 1070px) {
+    .metric__image, .points__image{
+        display: none;
+    }
+    .metric__img-mob, .points__img-mob{
+        display: block;
+        margin-bottom: 10px;
+    }
+    .metric__block, .points__block{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 770px) {
+    .main__inner{
+        text-align: center;
+    }
+    .main__title{
+        font-size: 45px;
+        line-height: 40px;
+    }
+    .main__descr{
+        font-weight: 500;
+        font-size: 24px;
+    }
+    .metric__img-mob, .points__img-mob{
+        display: block;
+        margin-bottom: 10px;
+        width: 40%;
+    }
+    .metric__title, .points__title{
+        text-align: center;
+    }
+    .learn__title::before{
+        content: '';
+        position: absolute;
+        width: 260px;
+        height: 9px;
+        margin-left: 190px;
+        top: 32px;
+        background-image: url('../images/home/group.svg');
+        background-repeat: no-repeat;
+    }
+    .learn__btn {
+        border-radius: 25px;
+        padding: 5px 45px;
+        transition: all .2s;
+        letter-spacing: 2px;
+        border: 2px solid #3B3D3D;
+        font-weight: 700;
+        font-size: 19px;
+        line-height: 26px;
+    }
+}
+@media (max-width: 556px) {
+    .main__title{
+        font-size: 45px;
+        line-height: 40px;
+    }
+    .main__descr{
+        font-size: 20px;
+    }
+}
+    
+@media (max-width: 495px) {
+    .learn__title::before{
+        content: '';
+        position: absolute;
+        width: 260px;
+        height: 9px;
+        margin-left: 40px;
+        top: 70px;
+        background-image: url('../images/home/group.svg');
+        background-repeat: no-repeat;
+    }
+}
+
+@media (max-width: 490px) {
+    .metric__title, .points__title{
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .metric__descr, .points__descr, .learn__descr{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 25px;
+    }
+}

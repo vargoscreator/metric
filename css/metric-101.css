@@ -1,0 +1,202 @@
+.main{
+    padding: 200px 0 108px 0;
+}
+
+.main__title{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 65px;
+    color: #000000;
+    position: relative;
+    margin-bottom: 80px;
+}
+.main__title::after{
+    position: absolute;
+    content: 'reference points';
+    left: 0;
+    top: 65px;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 35px;
+    color: #919191;
+}
+.main__title::before{
+    content: '';
+    position: absolute;
+    width: 238px;
+    height: 9px;
+    top: 60px;
+    background-image: url('../images/home/group.svg');
+    background-repeat: no-repeat;
+}
+
+.main__descr, .temperature__descr, .distances__descr, .weights__descr, .volume__descr{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 37px; 
+}
+
+.temperature__title br{
+    display: none;
+}
+.temperature, .distances, .weights, .volume{
+    padding-bottom: 116px;
+}
+.temperature__title, .distances__title, .weights__title, .volume__title{
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 55px;
+    color: #000000;
+    margin-bottom: 25px;
+    position: relative;
+}
+.temperature__descr, .distances__descr, .weights__descr, .volume__descr{
+    margin-bottom: 50px;
+}
+.temperature__descr span{
+    font-style: italic;
+}
+.temperature__title img, .distances__title img, .weights__title img, .volume__title img{
+    width: 50px;
+    position: absolute;
+    margin-left: -60px;
+}
+
+table th{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 37px;
+    color: #000000;
+}
+table td{
+    font-size: 18px;
+    line-height: 37px;
+    color: #000000;
+}
+.distances__table {
+    background-color:#FEFFCE;
+    border-collapse:collapse;
+}
+.distances__table th {
+    background-color:#FAFF00;
+    color: #000;
+    text-align: left;
+}
+.distances__table td, .distances__table th {
+    padding: 10px 15px;
+    border: 1px solid #b5b82e;
+}
+
+.distances__table a{
+    font-weight: 700;
+    transition: color .2s;
+}
+.distances__table a:hover{
+    color: #BE7402;
+}
+
+.weights__table {
+    background-color:#CEFFE8;
+    border-collapse: collapse;
+}
+.weights__table th {
+    background-color:#00FFD1;
+    color: #000;
+    text-align: left;
+}
+.weights__table td, .weights__table th {
+    padding: 10px 15px;
+    border: 1px solid #32b69e;
+}
+
+.volume__table {
+    background-color:#CEF3FF;
+    border-collapse: collapse;
+    margin-bottom: 27px;
+}
+.volume__table th {
+    background-color:#8AB2FF;
+    color: #000;
+    text-align: left;
+}
+.volume__table td, .volume__table th {
+    padding: 10px 15px;
+    border: 1px solid #6198ff;
+}
+
+@media (max-width: 890px) {
+    .main {
+        padding-top: 150px;
+    }
+}
+
+@media (max-width: 770px) {
+    table th{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 29px;
+    }
+    table td{
+        font-size: 18px;
+        line-height: 29px;
+    }
+    .main__title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        max-width: 100%;
+    }
+    .main__title::after{
+        right: 0;
+    }
+}
+
+@media (max-width: 595px) {
+    .temperature__title img{
+        transform: translateY(20px);
+    }
+    .temperature__title br{
+        display: block;
+    }
+    .volume{
+        padding-bottom: 0;
+    }
+    table th{
+        font-size: 18px;
+        line-height: 29px;
+    }
+    table td{
+        font-size: 14px;
+        line-height: 29px;
+    }
+}
+
+@media (max-width: 490px) {  
+    .temperature__title, .distances__title, .weights__title, .volume__title{
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .main__descr, .temperature__descr, .distances__descr, .weights__descr, .volume__descr{
+        font-size: 18px;
+        line-height: 29px;
+    }
+    .main__title::after{
+        font-size: 20px;
+    }
+    .temperature__title img, .distances__title img, .weights__title img, .volume__title img{
+        top: -16px;
+    }
+}
+
+@media (max-width: 450px) {
+    table td, table th{
+        font-size: 12px;
+        line-height: 18px;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,96 @@
+.main{
+    padding: 200px 0 108px 0;
+}
+
+.main__title{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 65px;
+    color: #000000;
+    position: relative;
+    margin-bottom: 80px;
+}
+.main__title::after{
+    position: absolute;
+    content: 'six top reasons';
+    left: 0;
+    top: 65px;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 35px;
+    color: #919191;
+}
+.main__title::before{
+    content: '';
+    position: absolute;
+    width: 238px;
+    height: 9px;
+    top: 60px;
+    background-image: url('../images/home/group.svg');
+    background-repeat: no-repeat;
+}
+
+.main__descr{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 37px;
+}
+
+.metric__block{
+    margin-bottom: 120px;
+}
+.metric__title{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 55px;
+    color: #000000;
+    margin-bottom: 25px;
+    position: relative;
+}
+.metric__descr{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 37px;
+}
+
+@media (max-width: 890px){
+    .main {
+        padding-top: 150px;
+    }
+}
+
+@media (max-width: 770px) {
+    .main {
+        padding-top: 150px;
+    }
+    .main__title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        max-width: 100%;
+    }
+    .main__title::after{
+        right: 0;
+    }
+    .metric__block{
+        margin-bottom: 70px;
+    }
+}
+
+@media (max-width: 490px) {  
+    .metric__title{
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .metric__descr, .main__descr{
+        font-size: 18px;
+        line-height: 29px;
+    }
+    .main__title::after{
+        font-size: 20px;
+    }
+}
